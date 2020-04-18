@@ -1,0 +1,114 @@
+body {
+    font-family: 'Noto Sans KR', sans-serif;
+    margin: 0;
+    background: url("../images/bg.jpg");
+}
+
+header {
+    background-color: hotpink;
+}
+img {
+    width: 300px;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.section-title {
+    margin-left: 21px;
+}
+
+/* HEADER */
+
+header .inner  {
+    margin: 0 auto; /* 중앙정렬 자연스레 해준다 */
+    height: 78px;
+    max-width: 90%;
+    display: flex;
+    justify-content: space-around;
+}
+
+header .logo-group {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+header .logo-group .logo {
+    width: 51px;
+    height: 51px;
+}
+
+header .logo-title {
+    color: orange;
+}
+
+header .menu-group .menus {
+    display: flex;
+    justify-content: center;
+}
+
+header .menu-group .menus li {
+    padding: 9px;
+}
+
+header .menu-group  a {
+    font-size: 18px;
+    color : gold;
+}
+
+/* PROFILE SECTION */
+.profile-section .inner {
+    text-align: center;  /* inline 요소 중앙정렬 */
+}
+
+/* VIDEO SECTION */
+.video-section .inner {
+    text-align: center;
+}
+
+.video-section .inner .video {
+    border: solid 3px orange; 
+}
+
+.favorite-words-section .inner {
+    background-color: pink;
+    width: 200px;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+/* FAVORITE FOODS SECTION */
+.favorite-food-section .inner {
+    display: flex;
+    justify-content: center;
+}
+.favorite-food-section .inner ol li {
+    list-style: decimal !important; 
+    /* overriding */
+    font-size: 21px;
+    color: orangered;
+}
+
+/* FOOTER */
+footer {
+    height: 50px;
+    background-color: orchid;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer .inner {
+    text-align: center;
+}
+
+footer .inner .creator {
+    font-size: 12px;
+}

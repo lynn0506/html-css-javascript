@@ -3,72 +3,86 @@
     <head>
         <meta charset="utf-8" />
         <title>My-Page</title>
-        <style> 
-            img {
-                width: 300px;
-            }
-        </style>
-        <link rel= "stylesheet" type = "text/css" href="index.css"/>
+        <link rel= "stylesheet" type = "text/css" href="css/index.css"/>
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap" rel="stylesheet">
     </head>
     <body>
         <!-- HEADER -->
         <header>
-            <h1>My Page</h1> 
-            <ul>
-                <li><a href="#profile">프로필 소개</a></li> 
-                <li><a href="#favorite-video">관련 영상</a></li> 
-                <li><a href="#favorite-food">좋아하는 음식</a></li>                 
-                <li><a href="#favorite-words">좋아하는 글귀</a></li> 
-            </ul>
-            <a href = "#">링크입니다</a>
+            <div class="inner">
+                <div class="logo-group">
+                    <img class="logo" src="images/시간표.png">
+                    <h1 class = "logo-title">My Page</h1> 
+                </div>
+                <div class="menu-group">
+                    <ul class="menus">
+                        <li><a href="#profile">프로필 소개</a></li> 
+                        <li><a href="#video">관련 영상</a></li> 
+                        <li><a href="#favorite-words">오늘의 소감</a></li> 
+                        <li><a href="#favorite-food">좋아하는 음식</a></li>                 
+                    </ul>
+                </div>
+            </div>
+            <!-- <a href = "#">링크입니다</a> -->
         </header>
         <!-- PROFILE SECTION -->
-        <section id = "profile">
+        <section class = "profile-section" id = "profile">
             <div class="section-title"><h1>프로필 소개</h1></div> 
-            <div>
+            <div class="inner">
                 <span> 내 이름은 로켓 </span>
                 <span> , 가디언즈오브갤럭시 </span>
                 <br><br>
-                <div> div tag </div>   
-                <img src="images/냥.jpeg" alt="">
+                <img class="profile-section" src="images/냥.jpeg" alt="">
                 <form method="POST" action = "#">
-                    <input type="text" maxlength = "30">
+                    댓글을 남겨주세요: <input type="text" maxlength = "30">
                     <input type="submit" value ="확인">
                     <button type="submit">확인</button>
                 </from> 
             </div> 
         </section> 
         <!-- FAVORITE VIDEO SECTION -->
-        <section id = "favorite-video"> 
-            <div class="section-title"><h1>좋아하는 영상</h1></div> 
-            <iframe
-                width="560" 
-                height="315" 
-                src="http://www.youtube.com/embed/VAoBIpxYfBE" 
-                frameborder="0" 
-                allow="autoplay; encrypted-media" 
-                allowfullscreen>
-            </iframe>
+        <section class="video-section" id = "video"> 
+            <div class="section-title"><h1>관련 영상</h1></div> 
+            <div class="inner">
+                <iframe
+                    class="video"
+                    width="560" 
+                    height="315" 
+                    src="http://www.youtube.com/embed/VAoBIpxYfBE" 
+                    frameborder="0" 
+                    allow="autoplay; encrypted-media" 
+                    allowfullscreen>
+                </iframe>
+            </div>
         </section> 
-        <!-- FAVORITE FOOD SECTION -->     
-        <section id = "favorite-food">
-            <div class="section-title"><h1>좋아하는 음식</h1></div> 
-            <ol> 
-                <li>떡볶이</li> 
-                <li>곱창</li> 
-                <li>술</li>
-            </ol>
-        </section>
+
         <!-- FAVORITE WORDS SECTION -->
-        <summary id = "favorite-words"> 
-            <div class="section-title"><h1>오늘의 소감</h1></div> 
-            <p> 
-                <strong>회장님</strong> 의 강의 <i>짱</i> ㅎㅅㅎ <br>
-                멋쟁이사자처럼 8기 짱 <br> 
-            </p>
+         <summary class="favorite-words-section" id = "favorite-words"> 
+                <div class="section-title"><h2>오늘의 소감</h2></div> 
+                <div class="inner">
+                    <p> 
+                        <strong>회장님</strong> 의 강의 <i>짱</i> ㅎㅅㅎ <br>
+                        멋쟁이사자처럼 8기 짱 <br> 
+                    </p>
+                </div>
         </summary>
+
+        <!-- FAVORITE FOOD SECTION -->     
+        <section class = "favorite-food-section" id = "favorite-food">
+            <div class="section-title"><h1>좋아하는 음식</h1></div> 
+            <div class="inner">
+                <ol> 
+                    <li>떡볶이</li> 
+                    <li>곱창</li> 
+                    <li>술</li>
+                </ol>
+            </div>
+        </section>
+       
         <footer> 
-            <div> created by eumjoo lynn0506@snu.ac.kr </div>
+            <div class="inner">
+                <span id = "creator"> created by eumjoo lynn0506@snu.ac.kr </div>
+            </div>
         </footer>
     </body>
 </html>
