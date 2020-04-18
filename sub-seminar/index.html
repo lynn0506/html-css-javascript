@@ -11,45 +11,69 @@
         <link rel= "stylesheet" type = "text/css" href="index.css"/>
     </head>
     <body>
-        <h1>My Page</h1> 
-        <ul>
-            <li> a </li> 
-            <li> b </li> 
-            <li> c </li> 
-        </ul>
-        <a href = "#">링크입니다</a>
-        <div>
-            <span> span tag </span>
-            <br>
-            <span> span tag </span>
-            <br><br>
-            <div> div tag </div>   
-            <img src="images/냥.jpeg" alt="">
+        <!-- HEADER -->
+        <header>
+            <h1>My Page</h1> 
+            <ul>
+                <li><a href="#profile">프로필 소개</a></li> 
+                <li><a href="#favorite-video">관련 영상</a></li> 
+                <li><a href="#favorite-food">좋아하는 음식</a></li>                 
+                <li><a href="#favorite-words">좋아하는 글귀</a></li> 
 
-            <form method="POST" action = "#">
-                <input type="text" maxlength = "30">
-                <input type="submit" value ="확인">
-                <button type="submit">확인</button>
-            </from>
+            </ul>
+            <a href = "#">링크입니다</a>
+        </header>
+        <!-- PROFILE SECTION -->
+        <section id = "profile">
+            <div class="section-title"><h1>프로필 소개</h1></div> 
+            <div>
+                <span> 내 이름은 로켓 </span>
+                <span> , 가디언즈오브갤럭시 </span>
+                <br><br>
+                <div> div tag </div>   
+                <img src="images/냥.jpeg" alt="">
+
+                <form method="POST" action = "#">
+                    <input type="text" maxlength = "30">
+                    <input type="submit" value ="확인">
+                    <button type="submit">확인</button>
+                </from> 
+            </div> 
+        </section> 
+        <!-- FAVORITE VIDEO SECTION -->
+        <section id = "favorite-video"> 
+            <div class="section-title"><h1>좋아하는 영상</h1></div> 
             <iframe
-                    width="560" 
-                    height="315" 
-                    src="http://www.youtube.com/embed/VAoBIpxYfBE" 
-                    frameborder="0" 
-                    allow="autoplay; encrypted-media" 
-                    allowfullscreen>
+                width="560" 
+                height="315" 
+                src="http://www.youtube.com/embed/VAoBIpxYfBE" 
+                frameborder="0" 
+                allow="autoplay; encrypted-media" 
+                allowfullscreen>
             </iframe>
+
+        </section> 
+
+        <!-- FAVORITE FOOD SECTION -->     
+        <section id = "favorite-food">
+            <div class="section-title"><h1>좋아하는 음식</h1></div> 
+            <ol> 
+                <li>떡볶이</li> 
+                <li>곱창</li> 
+                <li>술</li>
+            </ol>
+        </section>
+
+        <!-- FAVORITE WORDS SECTION -->
+        <summary id = "favorite-words"> 
+            <div class="section-title"><h1>오늘의 소감</h1></div> 
             <p> 
                 <strong>회장님</strong> 의 강의 <i>짱</i> ㅎㅅㅎ <br>
                 멋쟁이사자처럼 8기 짱 <br> 
             </p>
-
-            <ol> 
-                <li>가</li> 
-                <li>나</li> 
-                <li>다</li>
-            </ol>
-        </div> 
-        
+        </summary>
+        <footer> 
+            <div> created by eumjoo lynn0506@snu.ac.kr </div>
+        </footer>
     </body>
 </html>
