@@ -1,0 +1,84 @@
+<html>
+    <title> game </title>
+    <head> <meta charset='utf-8'> </head>
+        <style>
+            #input-form {
+                margin-top: 30px;
+                text-align: center;
+                font-weight: bold;
+            }
+
+            #game-form {
+                text-align: center;
+                font-weight: bold;
+                visibility: hidden;
+            }
+            
+            #game-result {
+                color:black;
+                text-align: center;
+                font-size: 35px;
+                visibility: hidden;
+            }
+            #game-box {
+                border:1px solid black;
+                width: 80%;
+                margin: auto;
+                text-align: center;
+                visibility: hidden;
+            }
+
+            #timer {
+                width: 20px;
+                height: 20px;
+                border: 4px solid #000;
+                margin:50px;
+                font-size:20px;
+                text-align : center;
+                line-height: 20px;
+                vertical-align: middle;
+            }
+
+            table,td {
+                text-align: center;
+                background: beige;
+                border: 1px solid #bcbcbc;
+            }
+            
+        
+        </style>
+    <body>
+        <h1 style="text-align:center;">지뢰찾기</h1>
+        <form id = "input-form" action = "javascript: setInit()">
+            <div id = "input">
+            <label>가로 길이</label> 
+                    <input type = "number" required id ="width" 
+                     size = "12" min = "5" max = "30" pattern="[5-9]|[1-2][0-9]|30"> </br>
+            <label>세로 길이</label> 
+                    <input type = "number" required id = "height"
+                     size = "12" min = "5" max = "30" pattern="[5-9]|[1-2][0-9]|30"> </br>
+            <label>지뢰 개수</label> 
+                    <input type = "number" required id = "mine" 
+                     size = "15" min = "0" max = "900" > </br>
+            <button type = "submit" id = "save" style= "font-size: 20px"> Game Start </button><br>
+            </div>
+        </form>
+        <div id = "game-form">
+            <button type = "button" id = "start" style= "font-size: 20px">START</button>
+            <button type = "button" id = "reset" style= "font-size: 20px">RESET</button></br>
+            Mines: <span class = "mine"></span> 
+            <button type = "button" id = "remainingMine" style="font-size: 20px">10</button>
+            Time: <span class= "time"></span>
+            <button type = "button" id = "time" style="font-size:20px">00:00:00</button></div></br>
+        </div>
+        <div id = "game-result">
+            <label>GAME OVER!</label>
+        </div>
+        <div>
+            <table id = "game-box">
+                <tbody id = "game-body"> </tbody>
+            </table>
+        </div>
+        <script src = "./game.js"></script>
+    </body>
+</html>
